@@ -6,7 +6,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     output = "The line is currently:"
-    katz_deli.each
+    katz_deli.each_with_index
      output << " #{counter+1}. #{katz_deli[counter]}"
       counter += 1
     end
