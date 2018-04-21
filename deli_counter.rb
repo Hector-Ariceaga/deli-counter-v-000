@@ -6,8 +6,8 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     output = "The line is currently:"
-    katz_deli.each_with_index(1) do |person, i|
-      output << " #{i}. #{katz_deli[i]}"
+    katz_deli.each_with_index(1) do |customer, i|
+      output << " #{i}. #{customer[i]}"
     end
     puts output
   end
