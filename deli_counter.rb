@@ -6,14 +6,10 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     output = "The line is currently:"
-    katz_deli.each_with_index do |i|
-     output << " #{i+1}. #{katz_deli[counter]}"
-      counter += 1
+    katz_deli.each_with_index(1) do |i|
+      output << " #{i}. #{katz_deli[i]}"
     end
     puts output
-  else 
-    
-  end
 end
 
 def take_a_number(katz_deli, name)
