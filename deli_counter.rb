@@ -2,7 +2,9 @@
 katz_deli = []
 
 def line(katz_deli)
-  if katz_deli.length > 0
+  if katz_deli.empty?
+    puts "The line is currently empty."
+  else
     counter = 0
     output = "The line is currently:"
     while counter < katz_deli.length
@@ -11,7 +13,7 @@ def line(katz_deli)
     end
     puts output
   else 
-    puts "The line is currently empty."
+    
   end
 end
 
