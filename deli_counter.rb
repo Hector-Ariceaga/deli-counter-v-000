@@ -10,6 +10,7 @@ def line(katz_deli)
       output << " #{i}. #{katz_deli[i]}"
     end
     puts output
+  end
 end
 
 def take_a_number(katz_deli, name)
