@@ -5,9 +5,8 @@ def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty."
   else
-    counter = 0
     output = "The line is currently:"
-    while counter < katz_deli.length
+    katz_deli.each
      output << " #{counter+1}. #{katz_deli[counter]}"
       counter += 1
     end
